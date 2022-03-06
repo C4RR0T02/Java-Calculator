@@ -5,4 +5,4 @@ Repository on simple Java Calculators
 3. Cost Calculator - Calculates the cost of a product after a discounted price with and without GST
 4. Basic Calculator - Calculates simple arithmathic operations with times table
 5. Number Guessing Game - Guess the number in 3 modes
-6. Commbined Calculator
+6. Combined Calculator
