@@ -24,14 +24,14 @@ public class Main {
         while (!end) {
             Menu();
             System.out.print("Enter option: ");
-            int choice = Integer.parseInt(myObj.nextLine());
+            string choice = myObj.nextLine();
             switch (choice) {
-                case 0 -> end = true;
-                case 1 -> CalcBMI();
-                case 2 -> CalcArea();
-                case 3 -> CalcCost();
-                case 4 -> Calculator();
-                case 5 -> NumberGuessingGame();
+                case "0" -> end = true;
+                case "1" -> CalcBMI();
+                case "2" -> CalcArea();
+                case "3" -> CalcCost();
+                case "4" -> Calculator();
+                case "5" -> NumberGuessingGame();
                 default -> System.out.println("Enter a valid input");
             }
         }
@@ -362,6 +362,8 @@ public class Main {
         int guessnum = 1;
         while (true) {
             if (guessnum == 1) {
+                System.out.println("Welcome to number guessing game Easy Mode");
+                System.out.println("The integer is in the range of 0 and 100");
                 System.out.println("Guess a number: ");
                 guess = Integer.parseInt(myObj.nextLine());
                 if (guess > 100) {
@@ -412,6 +414,9 @@ public class Main {
         int guessnum = 1;
         while (guessnum < 11) {
             if (guessnum == 1) {
+                System.out.println("Welcome to number guessing game Hard Mode");
+                System.out.println("You have 10 tries");
+                System.out.println("The integer is in the range of 0 and 100");
                 System.out.println("Guess a number: ");
                 guess = Integer.parseInt(myObj.nextLine());
                 if (guess > 100) {
@@ -463,6 +468,9 @@ public class Main {
         int guessnum = 1;
         while (guessnum < 6) {
             if (guessnum == 1) {
+                System.out.println("Welcome to number guessing game Impossible Mode");
+                System.out.println("You have 5 attempts");
+                System.out.println("The integer is in the range of 0 and 100");
                 System.out.println("Guess a number: ");
                 guess = Integer.parseInt(myObj.nextLine());
                 if (guess > 100) {
