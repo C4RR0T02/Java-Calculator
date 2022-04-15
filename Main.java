@@ -24,7 +24,7 @@ public class Main {
         while (!end) {
             Menu();
             System.out.print("Enter option: ");
-            string choice = myObj.nextLine();
+            String choice = myObj.nextLine();
             switch (choice) {
                 case "0" -> end = true;
                 case "1" -> CalcBMI();
@@ -93,21 +93,21 @@ public class Main {
         boolean Continue = true;
         while (Continue) {
             System.out.print("Select Pi Value: ");
-            int piOption = Integer.parseInt(myObj.nextLine());
+            String piOption = myObj.nextLine();
             switch (piOption) {
-                case 1 -> {
+                case "1" -> {
                     double fracArea = (22 * r * r) / 7;
                     System.out.println("The Area of the Circle is " + fracArea);
                     System.out.println("");
                     Continue = false;
                 }
-                case 2 -> {
+                case "2" -> {
                     double simpArea = 3.14 * r * r;
                     System.out.println("The Area of the Circle is " + simpArea);
                     System.out.println("");
                     Continue = false;
                 }
-                case 3 -> {
+                case "3" -> {
                     double mathPiArea = Math.PI * r * r;
                     System.out.println("The Area of the Circle is " + mathPiArea);
                     System.out.println("");
@@ -189,17 +189,17 @@ public class Main {
         while (exit) {
             SelectShape();
             System.out.print("Enter option: ");
-            int choice = Integer.parseInt(myObj.nextLine());
+            String choice = myObj.nextLine();
             switch (choice) {
-                case 0 -> {
+                case "0" -> {
                     System.out.println("");
                     exit = false;
                 }
-                case 1 -> CalcCircle();
-                case 2 -> CalcSquare();
-                case 3 -> CalcTriangle();
-                case 4 -> CalcTrapezium();
-                case 5 -> CalcRhombus();
+                case "1" -> CalcCircle();
+                case "2" -> CalcSquare();
+                case "3" -> CalcTriangle();
+                case "4" -> CalcTrapezium();
+                case "5" -> CalcRhombus();
                 default -> {
                     System.out.println("Enter a valid input");
                     System.out.println("");
@@ -329,14 +329,14 @@ public class Main {
         while (exit) {
             CalculatorMenu();
             System.out.print("Enter option: ");
-            int choice = Integer.parseInt(myObj.nextLine());
+            String choice = myObj.nextLine();
             switch (choice) {
-                case 0 -> exit = false;
-                case 1 -> Add();
-                case 2 -> Subtract();
-                case 3 -> Multiplication();
-                case 4 -> Division();
-                case 5 -> MultiplicationTable();
+                case "0" -> exit = false;
+                case "1" -> Add();
+                case "2" -> Subtract();
+                case "3" -> Multiplication();
+                case "4" -> Division();
+                case "5" -> MultiplicationTable();
                 default -> System.out.println("Enter a valid input");
             }
         }
@@ -530,12 +530,12 @@ public class Main {
         while (exit) {
             NumberGuessingGameMenu();
             System.out.print("Enter option: ");
-            int choice = Integer.parseInt(myObj.nextLine());
+            String choice = myObj.nextLine();
             switch (choice) {
-                case 0 -> exit = false;
-                case 1 -> EasyMode();
-                case 2 -> HardMode();
-                case 3 -> ImpossibleMode();
+                case "0" -> exit = false;
+                case "1" -> EasyMode();
+                case "2" -> HardMode();
+                case "3" -> ImpossibleMode();
                 default -> System.out.println("Enter a valid input");
             }
         }
